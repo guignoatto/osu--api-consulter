@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WgiqdU7RmXvaIsUqLpHB0mzrIt5cOX7M89mCHr+ccirz9jZfyEMuEbyM5ARu2aQDOVvqUV0W80FC7VvXWyI6OA==",
+  "dgSpecHash": "lVjOPZiys9PhqJxLienUz1aeXBQ0trfO94KaYEOCPOTM/QT/7ZhoybfFAPBPqqtVz4hyLjjESgdKCcS+2I8CAw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\GuilhermeG\\Repositórios\\API\\osu-consulter\\osu-consulter\\osu-consulter.csproj",
+  "projectFilePath": "C:\\Users\\GuilhermeG\\Repositórios\\API\\osu-api-consulter\\osu-consulter\\osu-consulter.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

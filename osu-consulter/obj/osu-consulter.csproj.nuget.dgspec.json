@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GuilhermeG\\Repositórios\\API\\osu-consulter\\osu-consulter\\osu-consulter.csproj": {}
+    "C:\\Users\\GuilhermeG\\Repositórios\\API\\osu-api-consulter\\osu-consulter\\osu-consulter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GuilhermeG\\Repositórios\\API\\osu-consulter\\osu-consulter\\osu-consulter.csproj": {
+    "C:\\Users\\GuilhermeG\\Repositórios\\API\\osu-api-consulter\\osu-consulter\\osu-consulter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GuilhermeG\\Repositórios\\API\\osu-consulter\\osu-consulter\\osu-consulter.csproj",
+        "projectUniqueName": "C:\\Users\\GuilhermeG\\Repositórios\\API\\osu-api-consulter\\osu-consulter\\osu-consulter.csproj",
         "projectName": "osu-consulter",
-        "projectPath": "C:\\Users\\GuilhermeG\\Repositórios\\API\\osu-consulter\\osu-consulter\\osu-consulter.csproj",
+        "projectPath": "C:\\Users\\GuilhermeG\\Repositórios\\API\\osu-api-consulter\\osu-consulter\\osu-consulter.csproj",
         "packagesPath": "C:\\Users\\GuilhermeG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GuilhermeG\\Repositórios\\API\\osu-consulter\\osu-consulter\\obj\\",
+        "outputPath": "C:\\Users\\GuilhermeG\\Repositórios\\API\\osu-api-consulter\\osu-consulter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\GuilhermeG\\AppData\\Roaming\\NuGet\\NuGet.Config",
