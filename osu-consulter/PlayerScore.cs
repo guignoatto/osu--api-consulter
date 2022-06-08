@@ -17,13 +17,21 @@ public class PlayerScore
 [Serializable]
 public class Score
 {
-    public UserOsu user { get; set; }
+    public UserData user { get; set; }
 }
 
 [Serializable]
-public class UserOsu
+public class UserData
 {
     public string username { get; set; }
     public string avatar_url { get; set; }
+    public CoverOsu cover { get; set; }
 }
+public class CoverOsu
+{
+    public string custom_url { get; set; }
+    public string url { get; set; }
+    public object id { get; set; }
+}
+
 

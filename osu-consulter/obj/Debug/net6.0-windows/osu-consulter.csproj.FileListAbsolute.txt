@@ -32,3 +32,4 @@ C:\Users\GuilhermeG\Repositórios\API\osu-api-consulter\osu-consulter\obj\Debug\
 C:\Users\GuilhermeG\Repositórios\API\osu-api-consulter\osu-consulter\obj\Debug\net6.0-windows\osu-consulter.pdb
 C:\Users\GuilhermeG\Repositórios\API\osu-api-consulter\osu-consulter\obj\Debug\net6.0-windows\osu-consulter.genruntimeconfig.cache
 C:\Users\GuilhermeG\Repositórios\API\osu-api-consulter\osu-consulter\obj\Debug\net6.0-windows\ref\osu-consulter.dll
+C:\Users\GuilhermeG\Repositórios\API\osu-api-consulter\osu-consulter\obj\Debug\net6.0-windows\osu_consulter.Properties.Resources.resources
