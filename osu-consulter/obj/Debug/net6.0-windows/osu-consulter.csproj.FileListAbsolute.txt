@@ -33,3 +33,12 @@ C:\Users\GuilhermeG\Repositórios\API\osu-api-consulter\osu-consulter\obj\Debug\
 C:\Users\GuilhermeG\Repositórios\API\osu-api-consulter\osu-consulter\obj\Debug\net6.0-windows\osu-consulter.genruntimeconfig.cache
 C:\Users\GuilhermeG\Repositórios\API\osu-api-consulter\osu-consulter\obj\Debug\net6.0-windows\ref\osu-consulter.dll
 C:\Users\GuilhermeG\Repositórios\API\osu-api-consulter\osu-consulter\obj\Debug\net6.0-windows\osu_consulter.Properties.Resources.resources
+C:\Users\GuilhermeG\Repositórios\API\osu-api-consulter\osu-consulter\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\GuilhermeG\Repositórios\API\osu-api-consulter\osu-consulter\obj\Debug\net6.0-windows\osu-consulter.csproj.CopyComplete
+C:\Users\GuilhermeG\Repositórios\API\osu-api-consulter\osu-consulter\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\GuilhermeG\Repositórios\API\osu-api-consulter\osu-consulter\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\GuilhermeG\Repositórios\API\osu-api-consulter\osu-consulter\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\GuilhermeG\Repositórios\API\osu-api-consulter\osu-consulter\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\GuilhermeG\Repositórios\API\osu-api-consulter\osu-consulter\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\GuilhermeG\Repositórios\API\osu-api-consulter\osu-consulter\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\GuilhermeG\Repositórios\API\osu-api-consulter\osu-consulter\bin\Debug\net6.0-windows\Dapper.dll

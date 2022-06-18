@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.BTN_CONSULT_BEATMAP = new System.Windows.Forms.Button();
-            this.TXT_OSU_NAME = new System.Windows.Forms.TextBox();
-            this.LBL_OSU_NAME = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.TXT_GLOBAL_RANK = new System.Windows.Forms.TextBox();
+            this.LBL_GLOBAL_RANKING = new System.Windows.Forms.Label();
+            this.LBL_BEATMAP_RANK = new System.Windows.Forms.Label();
             this.PB_IMAGE = new System.Windows.Forms.PictureBox();
             this.TXT_USER_ID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,13 +41,17 @@
             this.BT_GET_ACCESS_TOKEN = new System.Windows.Forms.Button();
             this.PB_BG_IMAGE = new System.Windows.Forms.PictureBox();
             this.BTN_CONSULT_USER = new System.Windows.Forms.Button();
+            this.LBL_COUNTRY_RANK = new System.Windows.Forms.Label();
+            this.TXT_COUNTRY_RANK = new System.Windows.Forms.TextBox();
+            this.TXT_USERNAME_SHOW = new System.Windows.Forms.TextBox();
+            this.BTN_TEST_CONNECTION = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PB_IMAGE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_BG_IMAGE)).BeginInit();
             this.SuspendLayout();
             // 
             // BTN_CONSULT_BEATMAP
             // 
-            this.BTN_CONSULT_BEATMAP.Location = new System.Drawing.Point(112, 329);
+            this.BTN_CONSULT_BEATMAP.Location = new System.Drawing.Point(112, 372);
             this.BTN_CONSULT_BEATMAP.Name = "BTN_CONSULT_BEATMAP";
             this.BTN_CONSULT_BEATMAP.Size = new System.Drawing.Size(157, 32);
             this.BTN_CONSULT_BEATMAP.TabIndex = 0;
@@ -55,31 +59,31 @@
             this.BTN_CONSULT_BEATMAP.UseVisualStyleBackColor = true;
             this.BTN_CONSULT_BEATMAP.Click += new System.EventHandler(this.BTN_CONSULT_Click);
             // 
-            // TXT_OSU_NAME
+            // TXT_GLOBAL_RANK
             // 
-            this.TXT_OSU_NAME.Location = new System.Drawing.Point(112, 243);
-            this.TXT_OSU_NAME.Name = "TXT_OSU_NAME";
-            this.TXT_OSU_NAME.Size = new System.Drawing.Size(157, 23);
-            this.TXT_OSU_NAME.TabIndex = 1;
+            this.TXT_GLOBAL_RANK.Location = new System.Drawing.Point(112, 243);
+            this.TXT_GLOBAL_RANK.Name = "TXT_GLOBAL_RANK";
+            this.TXT_GLOBAL_RANK.ReadOnly = true;
+            this.TXT_GLOBAL_RANK.Size = new System.Drawing.Size(157, 23);
+            this.TXT_GLOBAL_RANK.TabIndex = 1;
             // 
-            // LBL_OSU_NAME
+            // LBL_GLOBAL_RANKING
             // 
-            this.LBL_OSU_NAME.AutoSize = true;
-            this.LBL_OSU_NAME.Location = new System.Drawing.Point(18, 251);
-            this.LBL_OSU_NAME.Name = "LBL_OSU_NAME";
-            this.LBL_OSU_NAME.Size = new System.Drawing.Size(88, 15);
-            this.LBL_OSU_NAME.TabIndex = 2;
-            this.LBL_OSU_NAME.Text = "Nome no osu! :";
-            this.LBL_OSU_NAME.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.LBL_GLOBAL_RANKING.AutoSize = true;
+            this.LBL_GLOBAL_RANKING.Location = new System.Drawing.Point(35, 251);
+            this.LBL_GLOBAL_RANKING.Name = "LBL_GLOBAL_RANKING";
+            this.LBL_GLOBAL_RANKING.Size = new System.Drawing.Size(70, 15);
+            this.LBL_GLOBAL_RANKING.TabIndex = 2;
+            this.LBL_GLOBAL_RANKING.Text = "Global rank:";
+            this.LBL_GLOBAL_RANKING.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label1
+            // LBL_BEATMAP_RANK
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(112, 225);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.LBL_BEATMAP_RANK.AutoSize = true;
+            this.LBL_BEATMAP_RANK.Location = new System.Drawing.Point(112, 173);
+            this.LBL_BEATMAP_RANK.Name = "LBL_BEATMAP_RANK";
+            this.LBL_BEATMAP_RANK.Size = new System.Drawing.Size(0, 15);
+            this.LBL_BEATMAP_RANK.TabIndex = 3;
             // 
             // PB_IMAGE
             // 
@@ -126,11 +130,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(40, 225);
+            this.label4.Location = new System.Drawing.Point(23, 173);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 15);
+            this.label4.Size = new System.Drawing.Size(83, 15);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Colocação:";
+            this.label4.Text = "Beatmap rank:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // BT_GET_ACCESS_TOKEN
@@ -145,7 +149,7 @@
             // 
             // PB_BG_IMAGE
             // 
-            this.PB_BG_IMAGE.Location = new System.Drawing.Point(367, 66);
+            this.PB_BG_IMAGE.Location = new System.Drawing.Point(390, 66);
             this.PB_BG_IMAGE.Name = "PB_BG_IMAGE";
             this.PB_BG_IMAGE.Size = new System.Drawing.Size(408, 157);
             this.PB_BG_IMAGE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -155,7 +159,7 @@
             // 
             // BTN_CONSULT_USER
             // 
-            this.BTN_CONSULT_USER.Location = new System.Drawing.Point(112, 291);
+            this.BTN_CONSULT_USER.Location = new System.Drawing.Point(112, 334);
             this.BTN_CONSULT_USER.Name = "BTN_CONSULT_USER";
             this.BTN_CONSULT_USER.Size = new System.Drawing.Size(157, 32);
             this.BTN_CONSULT_USER.TabIndex = 12;
@@ -163,12 +167,54 @@
             this.BTN_CONSULT_USER.UseVisualStyleBackColor = true;
             this.BTN_CONSULT_USER.Click += new System.EventHandler(this.BTN_CONSULT_USER_Click);
             // 
+            // LBL_COUNTRY_RANK
+            // 
+            this.LBL_COUNTRY_RANK.AutoSize = true;
+            this.LBL_COUNTRY_RANK.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.LBL_COUNTRY_RANK.Location = new System.Drawing.Point(26, 280);
+            this.LBL_COUNTRY_RANK.Name = "LBL_COUNTRY_RANK";
+            this.LBL_COUNTRY_RANK.Size = new System.Drawing.Size(79, 15);
+            this.LBL_COUNTRY_RANK.TabIndex = 14;
+            this.LBL_COUNTRY_RANK.Text = "Country rank:";
+            this.LBL_COUNTRY_RANK.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // TXT_COUNTRY_RANK
+            // 
+            this.TXT_COUNTRY_RANK.Location = new System.Drawing.Point(112, 272);
+            this.TXT_COUNTRY_RANK.Name = "TXT_COUNTRY_RANK";
+            this.TXT_COUNTRY_RANK.ReadOnly = true;
+            this.TXT_COUNTRY_RANK.Size = new System.Drawing.Size(157, 23);
+            this.TXT_COUNTRY_RANK.TabIndex = 13;
+            // 
+            // TXT_USERNAME_SHOW
+            // 
+            this.TXT_USERNAME_SHOW.Location = new System.Drawing.Point(496, 346);
+            this.TXT_USERNAME_SHOW.Name = "TXT_USERNAME_SHOW";
+            this.TXT_USERNAME_SHOW.ReadOnly = true;
+            this.TXT_USERNAME_SHOW.Size = new System.Drawing.Size(157, 23);
+            this.TXT_USERNAME_SHOW.TabIndex = 15;
+            this.TXT_USERNAME_SHOW.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // BTN_TEST_CONNECTION
+            // 
+            this.BTN_TEST_CONNECTION.Location = new System.Drawing.Point(275, 334);
+            this.BTN_TEST_CONNECTION.Name = "BTN_TEST_CONNECTION";
+            this.BTN_TEST_CONNECTION.Size = new System.Drawing.Size(157, 32);
+            this.BTN_TEST_CONNECTION.TabIndex = 16;
+            this.BTN_TEST_CONNECTION.Text = "Test sql connection";
+            this.BTN_TEST_CONNECTION.UseVisualStyleBackColor = true;
+            this.BTN_TEST_CONNECTION.Click += new System.EventHandler(this.BTN_TEST_CONNECTION_Click);
+            // 
             // MainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(839, 485);
+            this.Controls.Add(this.BTN_TEST_CONNECTION);
+            this.Controls.Add(this.TXT_USERNAME_SHOW);
+            this.Controls.Add(this.LBL_COUNTRY_RANK);
+            this.Controls.Add(this.TXT_COUNTRY_RANK);
             this.Controls.Add(this.BTN_CONSULT_USER);
             this.Controls.Add(this.BT_GET_ACCESS_TOKEN);
             this.Controls.Add(this.label4);
@@ -177,13 +223,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TXT_USER_ID);
             this.Controls.Add(this.PB_IMAGE);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.LBL_OSU_NAME);
-            this.Controls.Add(this.TXT_OSU_NAME);
+            this.Controls.Add(this.LBL_BEATMAP_RANK);
+            this.Controls.Add(this.LBL_GLOBAL_RANKING);
+            this.Controls.Add(this.TXT_GLOBAL_RANK);
             this.Controls.Add(this.BTN_CONSULT_BEATMAP);
             this.Controls.Add(this.PB_BG_IMAGE);
             this.Name = "MainScreen";
-            this.Text = "Form1";
+            this.Text = "\'\'";
             ((System.ComponentModel.ISupportInitialize)(this.PB_IMAGE)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_BG_IMAGE)).EndInit();
             this.ResumeLayout(false);
@@ -194,9 +240,9 @@
         #endregion
 
         private Button BTN_CONSULT_BEATMAP;
-        private TextBox TXT_OSU_NAME;
-        private Label LBL_OSU_NAME;
-        private Label label1;
+        private TextBox TXT_GLOBAL_RANK;
+        private Label LBL_GLOBAL_RANKING;
+        private Label LBL_BEATMAP_RANK;
         private PictureBox PB_IMAGE;
         private TextBox TXT_USER_ID;
         private Label label2;
@@ -206,5 +252,9 @@
         private Button BT_GET_ACCESS_TOKEN;
         private PictureBox PB_BG_IMAGE;
         private Button BTN_CONSULT_USER;
+        private Label LBL_COUNTRY_RANK;
+        private TextBox TXT_COUNTRY_RANK;
+        private TextBox TXT_USERNAME_SHOW;
+        private Button BTN_TEST_CONNECTION;
     }
 }
