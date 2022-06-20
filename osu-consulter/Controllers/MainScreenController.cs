@@ -15,18 +15,10 @@ public class MainScreenController
         return await APIConsulter.GetTest("");
     }
 
-    public async Task<PlayerScore> GetPlayerScore(string playerID, int beatmapID)
+    public async Task<PlayerScore> GetPlayerScore(int playerID, int beatmapID)
     {
-        var userData = await APIConsulter.GetUserData(playerID);
-        if (userData.username is null)
-        {
-            return new PlayerScore();
-        }
-        var playerScore = await APIConsulter.GetBeatmapScore(userData.id, beatmapID);
-        if (playerScore is not null)
-        {
-            playerScore.score.user = userData;
-        }
+        var playerScore = await APIConsulter.GetBeatmapScore(playerID, beatmapID);
+
         return playerScore ?? new PlayerScore();
     }
 

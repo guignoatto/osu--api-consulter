@@ -19,7 +19,6 @@ public partial class MainScreen : Form
         TXT_USER_ID.Text = controller.guiperinoID;
         TXT_BEATMAP_ID.Text = controller.defaultMap;
     }
-
     private async void BTN_CONSULT_Click(object sender, EventArgs e)
     {
         ResetScreen();
@@ -32,21 +31,21 @@ public partial class MainScreen : Form
         }
 
         userId = TXT_USER_ID.Text;
-
-        var playerScore = await controller.GetPlayerScore(userId, beatmapId);
+        var userData = await ConsultUserData();
+        if (userData is null)
+        {
+            return;
+        }
+        var playerScore = await controller.GetPlayerScore(userData.id, beatmapId);
         if (playerScore.score is null)
         {
             ShowMessageBoxOk("No data found", "Error");
             return;
         }
-        PB_IMAGE.ImageLocation = await controller.GetPlayerImage(playerScore);
-        PB_BG_IMAGE.ImageLocation = await controller.GetPlayerBgImage(playerScore);
-        LBL_BEATMAP_RANK.Text = playerScore.position.ToString();
-        TXT_GLOBAL_RANK.Text = playerScore.score.user.statistics.global_rank.ToString();
-        TXT_COUNTRY_RANK.Text = playerScore.score.user.statistics.rank.country.ToString();
-        TXT_USERNAME_SHOW.Text = playerScore.score.user.username;
-    }
+        playerScore.score.user = userData;
 
+        LBL_BEATMAP_RANK.Text = playerScore.position.ToString();
+    }
     private void ResetScreen()
     {
         LBL_BEATMAP_RANK.Text = "";
@@ -56,12 +55,10 @@ public partial class MainScreen : Form
         PB_IMAGE.Image = null;
         PB_BG_IMAGE.Image = null;
     }
-
     private void ShowMessageBoxOk(string message, string header)
     {
         MessageBox.Show(message, header, MessageBoxButtons.OK);
     }
-
     private void BT_GET_ACCESS_TOKEN_Click(object sender, EventArgs e)
     {
         controller.GetFirstToken();
@@ -70,12 +67,33 @@ public partial class MainScreen : Form
     private async void BTN_CONSULT_USER_Click(object sender, EventArgs e)
     {
         ResetScreen();
-        string userId = "";
+
         if (String.IsNullOrEmpty(this.TXT_USER_ID.Text))
         {
             ShowMessageBoxOk("No data found", "Error");
             return;
         }
+
+        ConsultUserData();
+    }
+    private async void TXT_USER_ID_KeyDown(object sender, KeyEventArgs e)
+    {
+        if (e.KeyCode != Keys.Enter)
+            return;
+
+        ResetScreen();
+
+        if (String.IsNullOrEmpty(this.TXT_USER_ID.Text))
+        {
+            ShowMessageBoxOk("No data found", "Error");
+            return;
+        }
+
+        ConsultUserData();
+    }
+    private async Task<UserData> ConsultUserData()
+    {
+        string userId = "";
 
         userId = TXT_USER_ID.Text;
 
@@ -83,7 +101,7 @@ public partial class MainScreen : Form
         if (userData is null)
         {
             ShowMessageBoxOk("No data found", "Error");
-            return;
+            return null;
 
         }
         DBConfig db = new DBConfig();
@@ -93,8 +111,10 @@ public partial class MainScreen : Form
         TXT_GLOBAL_RANK.Text = userData.statistics.global_rank.ToString();
         TXT_COUNTRY_RANK.Text = userData.statistics.rank.country.ToString();
         TXT_USERNAME_SHOW.Text = userData.username;
-    }
+        TXT_COUNTRY.Text = userData.country.name;
 
+        return userData;
+    }
     private void BTN_TEST_CONNECTION_Click(object sender, EventArgs e)
     {
         DBConfig db = new DBConfig();

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GuilhermeG\\Repositórios\\API\\osu-api-consulter\\osu-consulter\\osu-consulter.csproj": {}
+    "C:\\Users\\gnoattogui\\Gui\\osu-api-consulter\\osu-consulter\\osu-consulter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GuilhermeG\\Repositórios\\API\\osu-api-consulter\\osu-consulter\\osu-consulter.csproj": {
+    "C:\\Users\\gnoattogui\\Gui\\osu-api-consulter\\osu-consulter\\osu-consulter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GuilhermeG\\Repositórios\\API\\osu-api-consulter\\osu-consulter\\osu-consulter.csproj",
+        "projectUniqueName": "C:\\Users\\gnoattogui\\Gui\\osu-api-consulter\\osu-consulter\\osu-consulter.csproj",
         "projectName": "osu-consulter",
-        "projectPath": "C:\\Users\\GuilhermeG\\Repositórios\\API\\osu-api-consulter\\osu-consulter\\osu-consulter.csproj",
-        "packagesPath": "C:\\Users\\GuilhermeG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GuilhermeG\\Repositórios\\API\\osu-api-consulter\\osu-consulter\\obj\\",
+        "projectPath": "C:\\Users\\gnoattogui\\Gui\\osu-api-consulter\\osu-consulter\\osu-consulter.csproj",
+        "packagesPath": "C:\\Users\\gnoattogui\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gnoattogui\\Gui\\osu-api-consulter\\osu-consulter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\GuilhermeG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gnoattogui\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -71,7 +71,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

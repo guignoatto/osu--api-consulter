@@ -27,12 +27,18 @@ public class UserData
     public int id { get; set; }
     public string username { get; set; }
     public string avatar_url { get; set; }
-    public CoverOsu cover { get; set; }
-    public UserStatistics statistics { get; set; }
+    public CoverData cover { get; set; }
+    public CountryData country { get; set; }
+    public StatisticsData statistics { get; set; }
 }
-
 [Serializable]
-public class CoverOsu
+public class CountryData
+{
+    public string code { get; set; }
+    public string name { get; set; }
+}
+[Serializable]
+public class CoverData
 {
     public string custom_url { get; set; }
     public string url { get; set; }
@@ -40,17 +46,17 @@ public class CoverOsu
 }
 
 [Serializable]
-public class UserStatistics
+public class StatisticsData
 {
     public string pp { get; set; }
-    public UserRank rank { get; set; }
+    public RankData rank { get; set; }
     public string hit_accuracy { get; set; }
 
     public int ?global_rank { get; set; }
 }
 
 [Serializable]
-public class UserLevel
+public class LevelData
 {
     public int current { get; set; }
     public int progress { get; set; }
@@ -58,7 +64,7 @@ public class UserLevel
 }
 
 [Serializable]
-public class UserRank
+public class RankData
 {
     public int global { get; set; }
     public int ?country { get; set; }

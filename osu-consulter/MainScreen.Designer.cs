@@ -45,6 +45,8 @@
             this.TXT_COUNTRY_RANK = new System.Windows.Forms.TextBox();
             this.TXT_USERNAME_SHOW = new System.Windows.Forms.TextBox();
             this.BTN_TEST_CONNECTION = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TXT_COUNTRY = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.PB_IMAGE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_BG_IMAGE)).BeginInit();
             this.SuspendLayout();
@@ -101,6 +103,7 @@
             this.TXT_USER_ID.Name = "TXT_USER_ID";
             this.TXT_USER_ID.Size = new System.Drawing.Size(157, 23);
             this.TXT_USER_ID.TabIndex = 5;
+            this.TXT_USER_ID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TXT_USER_ID_KeyDown);
             // 
             // label2
             // 
@@ -205,12 +208,33 @@
             this.BTN_TEST_CONNECTION.UseVisualStyleBackColor = true;
             this.BTN_TEST_CONNECTION.Click += new System.EventHandler(this.BTN_TEST_CONNECTION_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label1.Location = new System.Drawing.Point(52, 309);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 15);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Country:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // TXT_COUNTRY
+            // 
+            this.TXT_COUNTRY.Location = new System.Drawing.Point(112, 301);
+            this.TXT_COUNTRY.Name = "TXT_COUNTRY";
+            this.TXT_COUNTRY.ReadOnly = true;
+            this.TXT_COUNTRY.Size = new System.Drawing.Size(157, 23);
+            this.TXT_COUNTRY.TabIndex = 18;
+            // 
             // MainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(839, 485);
+            this.Controls.Add(this.TXT_COUNTRY);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.BTN_TEST_CONNECTION);
             this.Controls.Add(this.TXT_USERNAME_SHOW);
             this.Controls.Add(this.LBL_COUNTRY_RANK);
@@ -256,5 +280,7 @@
         private TextBox TXT_COUNTRY_RANK;
         private TextBox TXT_USERNAME_SHOW;
         private Button BTN_TEST_CONNECTION;
+        private Label label1;
+        private TextBox TXT_COUNTRY;
     }
 }
